@@ -1,0 +1,29 @@
+url = 'https://raw.githubusercontent.com/alura-cursos/Pandas/main/dados_sus.csv'
+
+dados = pd.read_csv(url, encoding='ISO-8859-1', sep=';', skiprows=3, skipfooter = 9, engine='python')
+
+encoding='ISO-8859-1': tipo de codificação dos caracteres do arquivo. Neste caso, é a codificação ISO-8859-1 que é comum em arquivos de língua portuguesa.
+
+sep=';': separador dos valores no arquivo. Neste caso, é o ponto-e-vírgula (;).
+
+skiprows=3: indica que as três primeiras linhas do arquivo devem ser ignoradas, pois não contêm dados relevantes.
+
+skipfooter = 9: indica que as nove últimas linhas do arquivo devem ser ignoradas, pois não contêm dados relevantes.
+
+engine='python': o motor usado para ler o arquivo é o Python. Isso é necessário quando se usa o parâmetro 
+
+skipfooter, pois o motor padrão não suporta essa opção.
+
+
+#Importando a biblioteca Pandas
+import pandas as pd
+
+#Importando o módulo JSON
+import json
+
+#Lendo o arquivo json usando o módulo Python JSON
+with open('pacientes_2.json','r') as f:
+    dados = json.loads(f.read())
+
+#Normalizando os dados com os parâmetros record_path e meta
+pd.json_normalize(dados, record_path='Pacientes', meta=['Pesquisa', 'Ano'])
