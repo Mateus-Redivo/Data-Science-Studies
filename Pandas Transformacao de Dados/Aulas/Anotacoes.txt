@@ -1,0 +1,26 @@
+avaliacao_geral: refere-se à média de notas dadas para a avaliação da hospedagem no imóvel.
+
+experiencia_local: descreve as experiências oferecidas durante a hospedagem no imóvel.
+
+max_hospedes: informa a quantidade máxima de hóspedes que o local permite.
+
+descricao_local: descreve o imóvel.
+
+descricao_vizinhanca: descreve a vizinhança ao redor do imóvel.
+
+quantidade_banheiros: informa a quantidade de banheiros disponíveis.
+
+quantidade_quartos: informa a quantidade de quartos disponíveis.
+
+quantidade_camas: informa a quantidade de camas disponíveis.
+
+modelo_cama: informa o modelo de cama oferecido.
+
+comodidades: informa as comodidades oferecidas pelo imóvel.
+
+taxa_deposito: informa a taxa de depósito mínima para segurança de hospedagem.
+
+taxa_limpeza: informa a taxa cobrada para o serviço de limpeza.
+
+preco: refere-se ao preço base a ser cobrado pela diária no imóvel.
+
